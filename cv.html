@@ -435,60 +435,6 @@
       border-color: var(--accent);
     }
 
-    /* ─── DOCUMENTS ────────────────────────────────────────── */
-    .docs-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 1rem;
-    }
-
-    .doc-card {
-      background: var(--card-bg);
-      border: 1px solid var(--divider);
-      border-radius: 2px;
-      padding: 1.2rem 1.4rem;
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      text-decoration: none;
-      color: var(--ink);
-      transition: box-shadow 0.2s, transform 0.2s, border-color 0.2s;
-    }
-    .doc-card:hover {
-      box-shadow: 0 6px 24px rgba(14,26,43,0.10);
-      transform: translateY(-2px);
-      border-color: var(--accent);
-    }
-
-    .doc-icon {
-      width: 36px; height: 36px;
-      flex-shrink: 0;
-      background: var(--tag-bg);
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .doc-icon svg {
-      width: 18px; height: 18px;
-      color: var(--accent);
-    }
-
-    .doc-info {}
-
-    .doc-name {
-      font-weight: 600;
-      font-size: 0.88rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .doc-meta {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.68rem;
-      color: var(--muted);
-      letter-spacing: 0.06em;
-    }
 
     /* ─── SKILLS ───────────────────────────────────────────── */
     .skills-grid {
@@ -679,7 +625,6 @@
     <li><a href="#publications" style="display:block;padding:0.85rem 1.1rem;font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a97a6;text-decoration:none;white-space:nowrap;">Publications</a></li>
     <li><a href="#skills" style="display:block;padding:0.85rem 1.1rem;font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a97a6;text-decoration:none;white-space:nowrap;">Skills</a></li>
     <li><a href="#achievements" style="display:block;padding:0.85rem 1.1rem;font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a97a6;text-decoration:none;white-space:nowrap;">Achievements</a></li>
-    <li><a href="#documents" style="display:block;padding:0.85rem 1.1rem;font-family:'DM Mono',monospace;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:#8a97a6;text-decoration:none;white-space:nowrap;">Documents</a></li>
   </ul>
 </nav>
 
@@ -907,86 +852,11 @@
     </div>
   </section>
 
-  <!-- DOCUMENTS -->
-  <section id="documents" class="section" aria-labelledby="docs-heading">
-    <div class="section-header">
-      <span class="section-num" aria-hidden="true">07</span>
-      <h2 id="docs-heading">Documents</h2>
-      <div class="section-line" aria-hidden="true"></div>
-    </div>
-    <div class="docs-grid">
-
-      <!-- TRANSCRIPTS
-      <!-- <a class="doc-card" href="files/transcript-pnu.pdf" target="_blank" rel="noopener" aria-label="Download PNU Transcript">
-        <div class="doc-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-        </div>
-        <div class="doc-info">
-          <div class="doc-name">Transcript — M.Sc.</div>
-          <div class="doc-meta">Pusan National University</div>
-        </div>
-      </a>
-
-      <!-- <a class="doc-card" href="files/transcript-christ.pdf" target="_blank" rel="noopener" aria-label="Download Christ University Transcript">
-        <div class="doc-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-        </div>
-        <div class="doc-info">
-          <div class="doc-name">Transcript — B.Tech</div>
-          <div class="doc-meta">Christ University</div>
-        </div>
-      </a>
-
-      <!-- CERTIFICATES
-      <!-- <a class="doc-card" href="files/certificate-msc.pdf" target="_blank" rel="noopener" aria-label="Download MSc Graduation Certificate">
-        <div class="doc-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-        </div>
-        <div class="doc-info">
-          <div class="doc-name">Certificate — M.Sc.</div>
-          <div class="doc-meta">Graduation Certificate</div>
-        </div>
-      </a>
-
-      <a class="doc-card" href="files/certificate-btech.pdf" target="_blank" rel="noopener" aria-label="Download BTech Graduation Certificate">
-        <div class="doc-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
-        </div>
-        <div class="doc-info">
-          <div class="doc-name">Certificate — B.Tech</div>
-          <div class="doc-meta">Graduation Certificate</div>
-        </div>
-      </a>
-
-      <!-- RESUMES
-      <!-- <a class="doc-card" href="files/resume.pdf" target="_blank" rel="noopener" aria-label="Download Resume PDF">
-        <div class="doc-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-        </div>
-        <div class="doc-info">
-          <div class="doc-name">Resume</div>
-          <div class="doc-meta">Standard Version · PDF</div>
-        </div>
-      </a>
-
-      <a class="doc-card" href="files/resume-europass.pdf" target="_blank" rel="noopener" aria-label="Download Europass Resume PDF">
-        <div class="doc-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-        </div>
-        <div class="doc-info">
-          <div class="doc-name">Resume — Europass</div>
-          <div class="doc-meta">Europass Format · PDF</div>
-        </div>
-      </a> 
-
-    </div> 
-  </section> -->
-
 </main>
 
 <footer role="contentinfo">
   <div class="footer-inner">
-    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzIiIGZpbGw9IiMwZTFhMmIiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIyOSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYzk5NzNhIiBzdHJva2Utd2lkdGg9IjEuMiIvPjxwYXRoIGQ9Ik0xNCA0NiBMMjQgMTggTDI5IDE4IEwzNCAzNCIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjIuOCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE4IDM2IEwzMC41IDM2IiBzdHJva2U9IiNjOTk3M2EiIHN0cm9rZS13aWR0aD0iMi4yIiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMzYgMTggTDM2IDQ2IiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMi44IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMzYgMzIgTDQ4IDE4IiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMi44IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMzYgMzIgTDQ4IDQ2IiBzdHJva2U9IiNjOTk3M2EiIHN0cm9rZS13aWR0aD0iMi44IiBzdHJva2UtbGluZWNhcD0icm91bmQiIGZpbGw9Im5vbmUiLz48L3N2Zz4=" alt="AK Logo" class="footer-logo" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH4AAABvCAYAAAAqqXS2AAABV2lDQ1BJQ0MgUHJvZmlsZQAAKJFtkE9LAlEUxY8mCKIV0SaocJllEpbgpoUZlFAgZn8XwfjGRmHGHjMTU7RsmctoLUXfoDaB+/ZB9A2qRdAmXRS97tNqtLpwuT8O9z3OPYDXp3Cu+wAYFdvMLcyFNza3..." alt="AK Logo" class="footer-logo" />
     <p>© 2025 Ashok Kambaluru &nbsp;·&nbsp; <a href="mailto:kambaluri.ashok@gmail.com">kambaluri.ashok@gmail.com</a> &nbsp;·&nbsp; <a href="index.html">← Home</a></p>
   </div>
 </footer>
