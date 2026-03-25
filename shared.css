@@ -1,0 +1,54 @@
+/* ═══════════════════════════════════════════════════════
+   SHARED STYLES — Ashok Kambaluru
+   Used by index.html and cv.html
+═══════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Outfit:wght@300;400;500;600&display=swap');
+
+/* ─── TOKENS ─────────────────────────────────────────── */
+:root {
+  --ink:          #0e1a2b;
+  --paper:        #f4f0e8;
+  --accent:       #c9973a;
+  --accent-light: #e8c97a;
+  --muted:        #6b7a8d;
+  --divider:      #d6cfc0;
+  --card-bg:      #ffffff;
+  --tag-bg:       #e8e2d8;
+}
+
+/* ─── RESET ──────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--paper);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ─── FOCUS ──────────────────────────────────────────── */
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* ─── REDUCED MOTION ─────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ─── ANIMATIONS ─────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
